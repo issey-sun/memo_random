@@ -1,0 +1,8 @@
+<h1>メモ作成ページ</h1>
+<%= form_with model: @memo, local: true do |f| %>
+<%= f.text_area :title, placeholder:"メモのタイトルを入力する" %>
+<%= f.submit "記録する" %>
+<% end %>
+<%= link_to 'メモ一覧ページへ', root_path %>
+
+

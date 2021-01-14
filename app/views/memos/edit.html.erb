@@ -1,0 +1,7 @@
+<h1>メモ編集ページ</h1>
+<%= @memo.title %>
+<%= form_with model: @memo, method: :patch, local: true do |f| %>
+<%= f.text_area :title, placeholder:"メモのタイトルを編集する" %>
+<%= f.submit "編集する" %>
+<% end %>
+<%= link_to 'メモ一覧ページへ', root_path %>
